@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewA"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewB"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/etActivityItem"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewA"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <EditText
+        android:id="@+id/etActivityItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Activity"
+        android:importantForAutofill="no"
+        android:inputType="textAutoCorrect"
+        android:minHeight="48dp"
+        android:textColorHint="#A1887F"
+        app:layout_constraintBottom_toTopOf="@+id/btnViewWorkouts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnViewWorkouts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnHandler"
+        android:text="Add to Day A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddActivityB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Day B"
+        android:onClick="btnHandler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

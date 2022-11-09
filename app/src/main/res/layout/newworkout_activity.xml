@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newworkout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvNewworkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="New Task"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColorHint="#757575" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNewworkout"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/darker_gray"
+        android:text="save"
+        android:textColor="#4E342E"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

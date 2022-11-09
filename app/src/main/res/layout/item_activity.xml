@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardMaxElevation="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_marginVertical="4dp"
+    android:layout_marginHorizontal="16dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_reorder_32"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvWorkoutItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test"
+            android:textSize="20sp"
+            app:drawableEndCompat="@drawable/ic_baseline_reorder_32"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
